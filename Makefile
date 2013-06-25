@@ -42,6 +42,7 @@ check: $(TESTS)
 
 clean:
 	-rm -f $(TESTS) *.o 
+	-rm -rf .libs
 
 test1_test: test1_test.o 
 	$(LIBTOOL) --mode=link $(CXX) -o $@ test1_test.o $(LDFLAGS) $(LIBS)
