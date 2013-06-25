@@ -49,3 +49,5 @@ test1_test: test1_test.o
 
 .c.o:
 	$(CXX) $(CFLAGS) -c $< -o $@
+
+.PHONY: clean all
